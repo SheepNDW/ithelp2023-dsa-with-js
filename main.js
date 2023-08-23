@@ -14,3 +14,8 @@ document.querySelector('#app').innerHTML = `
     <h2>Let's learn about the basics of Data Structures and Algorithms</h2>
   </div>
 `;
+
+// import { mergeSort } from '@/007-day7-code/MergeSort';
+
+// const arr = [3, 4, 9, 1, 8, 2, 0, 7, 6, 5];
+// mergeSort(arr);
