@@ -19,3 +19,18 @@ document.querySelector('#app').innerHTML = `
 
 // const arr = [3, 4, 9, 1, 8, 2, 0, 7, 6, 5];
 // mergeSort(arr);
+
+import { List } from '@/015-day15-code/LinkedList';
+import { SortedList } from '@/016-day16-code/sorted-list';
+
+const list = new SortedList();
+
+list.insert(222);
+list.insert(111);
+list.insert(333);
+list.insert(555);
+list.insert(444);
+list.insert(777);
+list.insert(666);
+
+console.log(list);
