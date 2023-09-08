@@ -20,17 +20,24 @@ document.querySelector('#app').innerHTML = `
 // const arr = [3, 4, 9, 1, 8, 2, 0, 7, 6, 5];
 // mergeSort(arr);
 
-import { List } from '@/015-day15-code/LinkedList';
-import { SortedList } from '@/016-day16-code/sorted-list';
+// import { List } from '@/015-day15-code/LinkedList';
+// import { SortedList } from '@/016-day16-code/sorted-list';
+import { BST } from '@/021-day21-code/BST';
 
-const list = new SortedList();
+// const list = new SortedList();
 
-list.insert(222);
-list.insert(111);
-list.insert(333);
-list.insert(555);
-list.insert(444);
-list.insert(777);
-list.insert(666);
+// list.insert(222);
+// list.insert(111);
+// list.insert(333);
+// list.insert(555);
+// list.insert(444);
+// list.insert(777);
+// list.insert(666);
 
-console.log(list);
+// console.log(list);
+
+const tree = new BST();
+[7, 15, 5, 3, 9, 8, 10, 13, 20, 18, 25].forEach((num) => tree.insert(num));
+console.log(tree.toString());
+
+tree.show();
