@@ -16,16 +16,11 @@ class Hash {
   }
 
   hash(s) {
-    let seed = 131;
-    let hash = 0;
-    for (let i = 0; i < s.length; i++) {
-      hash = s.charCodeAt(i) + hash * seed;
-    }
-    return hash & 0x7fffffff;
+    // your code here
   }
 
   getHash(key, capacity) {
-    return this.hash(key + '') % capacity;
+    // your code here
   }
 
   size() {
@@ -33,68 +28,23 @@ class Hash {
   }
 
   insert(key, value) {
-    let inserted = false;
-    const index = this.find(key, (item) => {
-      item.data = value;
-      if (!item.state) {
-        this.length++;
-      }
-      inserted = item.state = true;
-    });
-    if (!inserted) {
-      this.table[index] = new Node(key, value);
-      this.length++;
-    }
-    if ((this.length * 10) / this.capacity > 6) {
-      this.capacity *= 2;
-    }
-    return true;
+    // your code here
   }
 
   find(key, cb) {
-    const table = this.table;
-    let index = this.getHash(key, this.capacity);
-    let i = 1;
-    while (table[index]) {
-      if (table[index].name === key + '') {
-        cb.call(this, table[index]);
-      }
-      index = index + 2 * i - 1;
-      index %= this.capacity;
-      i++;
-    }
-    return index;
+    // your code here
   }
 
   get(key) {
-    let value = null;
-    const index = this.find(key, (item) => {
-      if (item.state) {
-        value = item.data;
-      }
-    });
-    return value;
+    // your code here
   }
 
   remove(key) {
-    let oldSize = this.length;
-    this.find(key, (item) => {
-      item.state = false;
-      this.length--;
-      if ((this.length * 10) / this.capacity < 6) {
-        this.capacity /= 2;
-      }
-    });
-    return this.length !== oldSize;
+    // your code here
   }
 
   forEach(cb) {
-    for (let i = 0; i < this.capacity; i++) {
-      const el = this.table[i];
-      if (el && el.state) {
-        cb(el.name, el.data);
-      }
-    }
+    // your code here
   }
 }
 

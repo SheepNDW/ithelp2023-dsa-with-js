@@ -6,13 +6,7 @@ import { CircularLink } from './CircularLinkedList';
  * @param {number} m - 每次數到的數字
  */
 function josephus(n, m) {
-  const list = new CircularLink();
-  for (let i = 0; i < n; i++) {
-    list.insertAt(i, i + 1);
-  }
-  kill(list, list.head, m);
-
-  return list.head.data;
+  // your code here
 }
 
 /**
@@ -21,29 +15,7 @@ function josephus(n, m) {
  * @param {number} m
  */
 function kill(list, node, m) {
-  let i = 1;
-  while (i <= m) {
-    if (i === m) {
-      if (node.next === node) {
-        // 只剩最後一個
-        console.log('最後一個', node.data);
-        return true;
-      }
-      let prev = node.prev;
-      let next = node.next;
-      prev.next = next;
-      next.prev = prev;
-      list.length--;
-
-      if (node === list.head) {
-        list.head = next;
-      }
-      console.log('出局', node.data);
-    }
-    i++;
-    node = node.next;
-  }
-  kill(list, node, m);
+  // your code here
 }
 
 export { josephus };
