@@ -15,15 +15,29 @@ document.querySelector('#app').innerHTML = `
   </div>
 `;
 
-// import { mergeSort } from '@/007-day7-code/MergeSort';
+/**
+ * ==== SinglyLinkedList ====
+ */
+// import { List } from '@/day07-linked-list/LinkedList';
 
-// const arr = [3, 4, 9, 1, 8, 2, 0, 7, 6, 5];
-// mergeSort(arr);
+// const list = new List();
+// list.insertAt(0, 111);
+// list.insertAt(1, 222);
+// list.insertAt(1, 333);
+// list.insertAt(3, 444);
+// list.forEach((el, i) => console.log(el, i));
+// try {
+//   list.insertAt(8, 333);
+// } catch (error) {
+//   console.log(error);
+// }
+// list.removeAt(1);
+// list.forEach((el, i) => console.log(el, i));
 
-// import { List } from '@/015-day15-code/LinkedList';
-// import { SortedList } from '@/016-day16-code/sorted-list';
-import { BST } from '@/021-day21-code/BST';
-
+/**
+ * ==== SortedList ====
+ */
+// import { SortedList } from '@/day08-linked-list2/sorted-list';
 // const list = new SortedList();
 
 // list.insert(222);
@@ -36,8 +50,21 @@ import { BST } from '@/021-day21-code/BST';
 
 // console.log(list);
 
-const tree = new BST();
-[7, 15, 5, 3, 9, 8, 10, 13, 20, 18, 25].forEach((num) => tree.insert(num));
-console.log(tree.toString());
+/**
+ * ==== BST ====
+ */
+// import { BST } from '@/day13-binary-search-tree/BST';
 
-tree.show();
+// const tree = new BST();
+// [7, 15, 5, 3, 9, 8, 10, 13, 20, 18, 25].forEach((num) => tree.insert(num));
+// console.log(tree.toString());
+
+// tree.show();
+
+/**
+ * ==== Merge sort ====
+ */
+// import { mergeSort } from '@/day20-merge-sort/MergeSort';
+
+// const arr = [3, 4, 9, 1, 8, 2, 0, 7, 6, 5];
+// mergeSort(arr);

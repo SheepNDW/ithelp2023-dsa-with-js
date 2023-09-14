@@ -1,4 +1,4 @@
-import { List } from '@/015-day15-code/LinkedList';
+import { List } from '@/day07-linked-list/LinkedList';
 
 function listToArray(head) {
   const result = [];
