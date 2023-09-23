@@ -51,6 +51,24 @@ document.querySelector('#app').innerHTML = `
 // console.log(list);
 
 /**
+ * ==== CircularLink ====
+ */
+// import { CircularLink } from '@/day08-linked-list2/CircularLinkedList';
+
+// const list = new CircularLink();
+
+// list.insertAt(0, 111);
+// list.insertAt(1, 222);
+// list.insertAt(2, 333);
+// list.insertAt(1, 444);
+// list.insertAt(3, 666);
+
+// list.forEach((el, i) => console.log(el, i));
+
+// list.removeAt(0);
+// console.log(list);
+
+/**
  * ==== BST ====
  */
 // import { BST } from '@/day13-binary-search-tree/BST';
